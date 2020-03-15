@@ -9,7 +9,7 @@
 #   To obtain CFzoneid use following command in any unix shell:         #
 #    curl -X GET "https://api.cloudflare.com/client/v4/zones" -H "X-Auth-Email: YOUR_EMAIL" -H "X-Auth-Key: YOUR_API_KEY" -H "Content-Type: application/json" | python -mjson.tool 
 #   To obtain CFid use following command in any unix shell:             #
-#    curl -X GET "https://api.cloudflare.com/client/v4/zones/YOUR_ZONE_ID/dns_records" -H "X-Auth-Email: YOUR_EMAIL" -H "X-Auth-Key: YOUR_API_KEY" -H "Content-Type: application/json" | python -mjson.tool
+#    curl -X GET "https://api.cloudflare.com/client/v4/zones/YOUR_ZONE_ID/dns_records" -H "X-Auth-Email: YOUR_EMAIL" -H "Authorization:Bearer YOUR_API_KEY" -H "Content-Type: application/json" | python -mjson.tool
 # - Enable CFDebug if needed - it'll print some info to logs            #
 # - Put script under /system scripts giving "read,write,ftp" policy access.       #
 #   For 6.29 and older "test" policy is also needed.                    #

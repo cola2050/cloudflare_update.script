@@ -1,18 +1,15 @@
 # cloudflare_update.script
-
 此脚本为Mikrotik RouterOS update script for CloudFlare
+
 使用方法：
 
 1、查看脚本需要如下參數：
 :local CFDebug "true"
 :global WANInterface "ether1-gateway"  
-
 :local CFdomain "sub.domain.com"
 :local CFzone "domain.com"
-
 :local CFemail "email@example.com"
 :local CFtkn "YOUR_API_KEY"
-
 :local CFzoneid "YOUR_ZONE_ID"
 :local CFid "YOUR_ID"
 
@@ -27,7 +24,9 @@ curl -X GET "https://api.cloudflare.com/client/v4/zones/YOUR_ZONE_ID/dns_records
 *Write
 
 *Test
+
 *Sniff
+
 *Sensitive
 
 3、在ROS的system/scheduler添加一个轮训的计划任务：比如每五分钟执行一次

@@ -5,13 +5,21 @@
 
 1、查看脚本需要如下參數：
 :local CFDebug "true"
+
 :global WANInterface "ether1-gateway"  
+
 :local CFdomain "sub.domain.com"
+
 :local CFzone "domain.com"
+
 :local CFemail "email@example.com"
+
 :local CFtkn "YOUR_API_KEY"
+
 :local CFzoneid "YOUR_ZONE_ID"
+
 :local CFid "YOUR_ID"
+
 
 注意這裏需要先执行下面代码先获取到CFID：
 

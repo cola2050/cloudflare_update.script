@@ -20,10 +20,14 @@
 
 :local CFid "YOUR_ID"
 
+1、获取 CF 的 ID：
 
-注意這裏需要先执行下面代码先获取到CFID：
+curl -X GET "https://api.cloudflare.com/client/v4/zones/这里填你官网的 Zone ID/dns_records" \
+     -H "X-Auth-Email: 这里填你登录的 EMAIL 例如：xxx@gmail.com" \
+     -H "X-Auth-Key: 这里填你的 API Keys 例如：c9a3a22e788cafcd827b78e1e8dfa7f22b370" \
+     -H "Content-Type: application/json"
+这里注意下，每个子域名获取的 id 都是不一样的:
 
-curl -X GET "https://api.cloudflare.com/client/v4/zones/YOUR_ZONE_ID/dns_records" -H "X-Auth-Email: YOUR_EMAIL" -H "Authorization:Bearer YOUR_API_KEY" -H "Content-Type: application/json" | python -mjson.tool
 
 2、修改完毕，把script更新到ros需要添加如下执行权限：
 

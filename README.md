@@ -26,6 +26,7 @@ curl -X GET "https://api.cloudflare.com/client/v4/zones/这里填你官网的 Zo
      -H "X-Auth-Email: 这里填你登录的 EMAIL 例如：xxx@gmail.com" \
      -H "X-Auth-Key: 这里填你的 API Keys 例如：c9a3a22e788cafcd827b78e1e8dfa7f22b370" \
      -H "Content-Type: application/json"
+     
 这里注意下，每个子域名获取的 id 都是不一样的:
 
 

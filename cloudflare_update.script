@@ -20,20 +20,20 @@
 #TTL
 :local CFttl "120"
 #主域名
-:local CFzone "hscbook.com"
+:local CFzone "cola-service.com"
 #IPv4子域名
-:local CFdomain "ipv4.hscbook.com"
-:local CFdomainid "087dxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+:local CFdomain "ipv4.cola-service.com"
+:local CFdomainid "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 #双栈IPv6域名ID
-:local CFdomainid46 "8adcxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+:local CFdomainid46 "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 #IPv6子域名 true/false
 :local switchv6 "true"
-:local CFdomain6 "ipv6.hscbook.com"
-:local CFdomainid6 "f100xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+:local CFdomain6 "ipv6.cola-service.com"
+:local CFdomainid6 "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 #CloudFlare账号与APIKEY
 :local CFemail "xxxxx@xxxxxx.com"
-:local CFtkn "101fbxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-:local CFzoneid "c25abxxxxcxxxxxxxxxxxxxxxxxxxxxx"
+:local CFtkn "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+:local CFzoneid "xxxxcxxxxxxxxxxxxxxxxxxxxxx"
 
 ################# 内部变量 #################
 #ipv4

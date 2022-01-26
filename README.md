@@ -2,14 +2,23 @@
 此脚本为Mikrotik RouterOS update script for CloudFlare
 
 前提条件
+
 注意：脚本是基于RouterOS v6.46.4 编写的，大于小于此版本都可能导致一些命令问题
+
 确认正确的公网地址
+
 IPv4验证方法：
+
 脚本提取 (WinBox –> IP –> Address List) 内指定接口的IP地址进行解析
+
 ROS终端运行：/ip address get [/ip address find interface=接口名称] address
+
 IPv6验证方法：
+
 脚本提取 DHCPv6 Client 获取的 Prefix 并加上指定的IPv6后缀进行解析
+
 ROS终端运行：/ipv6 dhcp-client get [find interface=接口名称] status
+
 查看读出的数据是否为公网地址，
 提前新建子域名
 在 CloudFlare 新建需要解析的子域名，若需要解析IPv6和双栈还需要建立IPv4同名子域名和单独子域名，单独子域名用于IPv6是否更新的判断
